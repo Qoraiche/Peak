@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "resources/js/*"
+      ],
+      "@peak/*": [
+        "peak/resources/js/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "public"
+  ]
+}

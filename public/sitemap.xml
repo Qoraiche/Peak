@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    <url>
+    <loc>http://peak-twelve.test/blog/top-10-tips-for-a-productive-day</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://peak-twelve.test/blog/top-10-des-conseils-pour-une-journee-productive" />
+    <lastmod>2025-05-13T18:31:08+00:00</lastmod>
+            </url>
+    <url>
+    <loc>http://peak-twelve.test/blog/how-to-stay-motivated-when-working-from-home</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://peak-twelve.test/blog/comment-rester-motive-en-travaillant-a-domicile" />
+    <lastmod>2025-05-13T18:31:08+00:00</lastmod>
+            </url>
+    <url>
+    <loc>http://peak-twelve.test/blog/top-5-saas-tools-to-boost-team-productivity</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://peak-twelve.test/blog/top-5-des-outils-saas-pour-booster-la-productivite-de-lequipe" />
+    <lastmod>2025-05-13T18:31:08+00:00</lastmod>
+            </url>
+    <url>
+    <loc>http://peak-twelve.test/terms-of-service</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://peak-twelve.test/conditions-dutilisation" />
+    <lastmod>2025-05-13T18:31:06+00:00</lastmod>
+            </url>
+    <url>
+    <loc>http://peak-twelve.test/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://peak-twelve.test/politique-de-confidentialite" />
+    <lastmod>2025-05-13T18:31:06+00:00</lastmod>
+            </url>
+    <url>
+    <loc>http://peak-twelve.test/cookie-policy</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://peak-twelve.test/politique-relative-aux-cookies" />
+    <lastmod>2025-05-13T18:31:06+00:00</lastmod>
+            </url>
+    <url>
+    <loc>http://peak-twelve.test/docs/getting-started</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://peak-twelve.test/docs/commencer" />
+    <lastmod>2025-05-13T18:31:08+00:00</lastmod>
+            </url>
+    <url>
+    <loc>http://peak-twelve.test/roadmaps/laravel-11-learning-roadmap</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://peak-twelve.test/roadmaps/feuille-de-route-pour-apprendre-laravel-11" />
+    <lastmod>2025-05-13T18:31:07+00:00</lastmod>
+            </url>
+    <url>
+    <loc>http://peak-twelve.test/roadmaps/mastering-vue-3-with-composition-api</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://peak-twelve.test/roadmaps/maitriser-vue-3-avec-lapi-composition" />
+    <lastmod>2025-05-13T18:31:07+00:00</lastmod>
+            </url>
+    <url>
+    <loc>http://peak-twelve.test/roadmaps/si-lkala</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://peak-twelve.test/roadmaps/si-lkala" />
+    <lastmod>2025-05-14T23:49:20+00:00</lastmod>
+            </url>
+</urlset>

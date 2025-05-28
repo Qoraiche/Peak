@@ -1,0 +1,106 @@
+<script setup>
+
+import {router} from "@inertiajs/vue3";
+import {onMounted, ref} from "vue";
+
+import {ChevronUpIcon} from "@heroicons/vue/24/outline";
+import {ChevronDownIcon} from "@heroicons/vue/24/outline";
+
+const props = defineProps({
+    title: '',
+    sortKey: String
+});
+
+const hasFilterName = ref(false);
+const filterName = ref(null);
+const sortType = ref('asc');
+
+const sortBy = by => {
+
+    let sortBy = sortType.value === 'asc' ? '-' + by : by;
+
+    const params = {
+        sort: sortBy
+    };
+
+    if (hasFilterName.value) {
+        params.filter = {
+            name: filterName.value
+        };
+    }
+
+    let options = Object.assign(route().params, params);
+
+    router.visit(route(route().current(), options), {
+        method: 'get',
+        preserveState: false,
+        preserveScroll: true,
+    });
+
+}
+
+onMounted(() => {
+    // Get the query string from the URL
+    const queryString = window.location.search;
+
+    // Parse the query string into an object
+    const queryParams = new URLSearchParams(queryString);
+
+    // Check if the 'filter[name]' parameter exists
+    if (queryParams.has('filter[name]')) {
+        hasFilterName.value = true;
+        filterName.value = queryParams.get('filter[name]');
+    }
+
+    /** get sort value **/
+    const getSortValue = () => {
+        const queryString = window.location.search;
+
+        // Parse the query string into an object
+        const queryParams = new URLSearchParams(queryString);
+
+        // Check if the 'filter[name]' parameter exists
+        if (queryParams.has('sort')) {
+            return queryParams.get('sort');
+        }
+
+        return null;
+    }
+
+    /** get sort type **/
+    const getSortType = () => {
+        if (getSortValue()) {
+            return getSortValue().startsWith('-') ? 'desc' : 'asc';
+        }
+
+        return sortType.value;
+    }
+
+    // check if queryParams.get('sort') has the same value as props.sortKey
+
+    if (getSortValue()) {
+        const cleanSortValue = getSortValue().replace(/^-/, '');
+
+        if (cleanSortValue === props.sortKey) {
+            sortType.value = getSortType();
+        }
+    }
+});
+
+</script>
+
+<template>
+    <th scope="col" class="px-6 py-3 cursor-pointer" @click="sortBy(sortKey)">
+        <div class="flex items-center capitalize">
+            {{ title }}
+            <div>
+                <ChevronUpIcon class="h-3 w-3 text-gray-500 ml-1.5" v-if="sortType === 'asc'"/>
+                <ChevronDownIcon class="h-3 w-3 text-gray-500 ml-1.5" v-else/>
+            </div>
+        </div>
+    </th>
+</template>
+
+<style scoped>
+
+</style>

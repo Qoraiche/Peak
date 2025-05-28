@@ -1,0 +1,39 @@
+{
+    "name": "qoraiche/peak",
+    "description": "Peak laravel admin panel and SAAS Starter Kit",
+    "keywords": [
+        "laravel",
+        "admin",
+        "panel",
+        "framework",
+        "saas"
+    ],
+    "license": "MIT",
+    "homepage": "https://peak.snapifycode.com",
+    "support": {
+        "issues": "https://snapifycode.com/forums",
+        "source": "https://peak.snapifycode.com"
+    },
+    "authors": [
+        {
+            "name": "Yassine Qoraiche",
+            "email": "contact@qoraiche.me"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Qoraiche\\Peak\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Qoraiche\\Peak\\PeakServiceProvider"
+            ]
+        }
+    }
+}
