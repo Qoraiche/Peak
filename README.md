@@ -1,5 +1,7 @@
 # 🌄 Peak SaaS – Premium Laravel Starter Kit & Admin Panel
 
+[![Laravel Forge Site Deployment Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fforge.laravel.com%2Fsite-badges%2F8859318b-3c71-4eb5-9102-4d0a8d34b967%3Fdate%3D1%26label%3D1%26commit%3D1&style=flat)](https://demo.larapeak.com/)
+
 **Peak SaaS** is a premium starter kit and admin panel built on the latest Laravel stack. It gives you a beautiful, ready-to-go foundation for your next SaaS Laravel project — packed with useful features, a clean UI, and developer-friendly code.
 
 Skip the boilerplate and start building right away.
