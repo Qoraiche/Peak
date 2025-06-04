@@ -30,8 +30,7 @@ const props = defineProps({
   <Head :title="title"/>
 
   <!-- header & hero -->
-  <div class="bg-yellow-300">
-
+  <div class="bg-gradient-to-br from-yellow-50 via-amber-100 to-orange-100">
     <AnnouncementBanner/>
 
     <header class="mx-auto max-w-6xl">
@@ -41,11 +40,7 @@ const props = defineProps({
             <span class="sr-only">
               {{ __('Logo') }}
             </span>
-            <svg id="site-page-logo" class="fill-current text-white" height="32" width="32"
-                 xmlns="http://www.w3.org/2000/svg">
-              <path class="fill-gray-100" d="M13.853 18.14 1 10.643 31 1l-.019.058z"></path>
-              <path class="fill-gray-200" d="M13.853 18.14 30.981 1.058 21.357 31l-7.5-12.857z"></path>
-            </svg>
+            <img :src="logoImagePath" alt="Logo" class="h-10 w-auto"/>
           </Link>
         </div>
         <div class="flex lg:hidden">
@@ -61,9 +56,28 @@ const props = defineProps({
 
         <div class="hidden lg:flex items-center lg:gap-x-10">
           <div>
-            <a href="#"
+            <a href="/#features"
                class="text-sm/6 font-semibold text-gray-900">
-              Menu 1
+              Features
+            </a>
+          </div>
+
+          <div>
+            <a href="/#testimonials"
+               class="text-sm/6 font-semibold text-gray-900">
+              Testimonials
+            </a>
+          </div>
+          <div>
+            <a href="/#pricing"
+               class="text-sm/6 font-semibold text-gray-900">
+              Pricing
+            </a>
+          </div>
+          <div>
+            <a href="/#faqs"
+               class="text-sm/6 font-semibold text-gray-900">
+              FAQs
             </a>
           </div>
         </div>
@@ -109,19 +123,40 @@ const props = defineProps({
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
+                <div>
+                  <a href="/#features"
+                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                    Features
+                  </a>
+                </div>
 
                 <div>
-                  <a href="#"
+                  <a href="/#testimonials"
                      class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                    Menu 1
+                    Testimonials
+                  </a>
+                </div>
+
+                <div>
+                  <a href="/#pricing"
+                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                    Pricing
+                  </a>
+                </div>
+
+                <div>
+                  <a href="/#faqs"
+                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                    FAQs
                   </a>
                 </div>
               </div>
+
               <div class="py-6">
-<!--                <Link v-if="!$page.props.auth?.user" :href="route('login')"
-                      class="text-sm leading-6 text-gray-900 rounded-md font-semibold">
-                  {{ __('Login') }}
-                </Link>-->
+                <!--                <Link v-if="!$page.props.auth?.user" :href="route('login')"
+                                      class="text-sm leading-6 text-gray-900 rounded-md font-semibold">
+                                  {{ __('Login') }}
+                                </Link>-->
 
                 <PrimaryButton @click="router.visit(route('register'))"
                                class="justify-center !rounded-full py-2.5 px-6 !shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200">
