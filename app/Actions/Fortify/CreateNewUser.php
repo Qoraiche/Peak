@@ -9,19 +9,10 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
 use Laravel\Jetstream\Jetstream;
-use Qoraiche\Peak\Services\User\ReferralService;
-use Qoraiche\Peak\Support\PeakFeatures;
 
 class CreateNewUser implements CreatesNewUsers
 {
     use PasswordValidationRules;
-
-    /**
-     * @param ReferralService $referralService
-     */
-    public function __construct(private ReferralService $referralService)
-    {
-    }
 
     /**
      * Create a newly registered user.
@@ -44,7 +35,6 @@ class CreateNewUser implements CreatesNewUsers
                 'password' => Hash::make($input['password']),
             ]), function (User $user) {
                 $this->createTeam($user);
-                $this->referralService->processReferral($user);
                 activity()->causedBy($user)
                     ->event('registered')
                     ->log(__('User has registered'));
