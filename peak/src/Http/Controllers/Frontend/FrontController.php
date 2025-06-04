@@ -13,7 +13,7 @@ class FrontController extends Controller
      * @param WebsiteGeneralSettings $websiteGeneralSettings
      * @return Response
      */
-    public function __invoke(
+    public function index(
         WebsiteGeneralSettings $websiteGeneralSettings
     )
     {
