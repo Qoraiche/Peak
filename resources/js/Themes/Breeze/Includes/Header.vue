@@ -38,9 +38,28 @@ defineProps({});
       </div>
       <div class="hidden lg:flex items-center lg:gap-x-10">
         <div>
-          <a href="#menu-1"
+          <a href="#features"
              class="text-sm/6 font-semibold text-gray-900">
-            Menu 1
+            Features
+          </a>
+        </div>
+
+        <div>
+          <a href="#testimonials"
+             class="text-sm/6 font-semibold text-gray-900">
+            Testimonials
+          </a>
+        </div>
+        <div>
+          <a href="#pricing"
+             class="text-sm/6 font-semibold text-gray-900">
+            Pricing
+          </a>
+        </div>
+        <div>
+          <a href="#faqs"
+             class="text-sm/6 font-semibold text-gray-900">
+            FAQs
           </a>
         </div>
       </div>
@@ -77,11 +96,8 @@ defineProps({});
           <a class="-m-1.5 p-1.5" href="#">
             <span class="sr-only">Your Company</span>
 
-            <svg class="h-12 self-end text-white fill-current"
-                 xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.853 18.14 1 10.643 31 1l-.019.058z"></path>
-              <path class="fill-gray-200" d="M13.853 18.14 30.981 1.058 21.357 31l-7.5-12.857z"></path>
-            </svg>
+            <img v-if="$page.props.front.logo_path" class="self-end h-12 w-auto max-w-[160px]" id="logo"
+                 :src="$page.props.front.logo_path" alt="Logo"/>
           </a>
           <button class="-m-2.5 rounded-md p-2.5 text-gray-700" type="button"
                   @click="mobileMenuOpen = false">
@@ -93,9 +109,30 @@ defineProps({});
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="py-6 space-y-2">
               <div>
-                <a href="#menu-1"
+                <a href="/#features"
                    class="block px-3 py-2 -mx-3 text-base font-medium leading-7 text-gray-900 rounded-lg hover:bg-gray-50">
-                  Menu 1
+                  Features
+                </a>
+              </div>
+
+              <div>
+                <a href="/#testimonials"
+                   class="block px-3 py-2 -mx-3 text-base font-medium leading-7 text-gray-900 rounded-lg hover:bg-gray-50">
+                  Testimonials
+                </a>
+              </div>
+
+              <div>
+                <a href="/#pricing"
+                   class="block px-3 py-2 -mx-3 text-base font-medium leading-7 text-gray-900 rounded-lg hover:bg-gray-50">
+                  Pricing
+                </a>
+              </div>
+
+              <div>
+                <a href="/#faqs"
+                   class="block px-3 py-2 -mx-3 text-base font-medium leading-7 text-gray-900 rounded-lg hover:bg-gray-50">
+                  FAQs
                 </a>
               </div>
             </div>
