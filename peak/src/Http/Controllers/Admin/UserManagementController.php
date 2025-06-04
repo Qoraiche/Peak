@@ -19,12 +19,8 @@ use Qoraiche\Peak\Http\Filters\Admin\UserSearchFilter;
 use Qoraiche\Peak\Http\Requests\Admin\BulkDeleteRequest;
 use Qoraiche\Peak\Http\Rules\ValidCountryCode;
 use Qoraiche\Peak\Models\Role;
-use Qoraiche\Peak\Models\SubscriptionPlan;
-use Qoraiche\Peak\Models\SubscriptionPlanPricing;
 use Qoraiche\Peak\Models\User;
 use Qoraiche\Peak\Services\Admin\UserService;
-use Qoraiche\Peak\Services\Billing\PlanService;
-use Qoraiche\Peak\Services\User\ReferralService;
 use Qoraiche\Peak\Traits\HandlesPermissions;
 use Spatie\Activitylog\Models\Activity;
 use Spatie\QueryBuilder\AllowedFilter;
@@ -36,15 +32,10 @@ class UserManagementController extends Controller
         HandlesPermissions;
 
     /**
-     * @param ReferralService $referralService
      * @param UserService $userService
-     * @param PlanService $planService
      */
-    public function __construct(private ReferralService $referralService,
-                                private UserService     $userService,
-                                private PlanService     $planService)
+    public function __construct(private UserService $userService)
     {
-//        $this->authorizeResource(User::class, 'user');
     }
 
     /**
@@ -154,25 +145,6 @@ class UserManagementController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     */
-    /*public function show(User $user)
-    {
-        $timezones = DateTimeZone::listIdentifiers();
-
-        $roles = Role::pluck('name')->all();
-        $selectedRoles = $user->roles->pluck('name')->all();
-
-        return Inertia::render('Admin/Users/Create', [
-            'user' => $user,
-            'notes' => $user->userNotes()->with('poster')->get(),
-            'selectedRoles' => $selectedRoles,
-            'roles' => $roles,
-            'timezones' => $timezones
-        ]);
-    }*/
-
-    /**
      * Show the form for editing the specified resource.
      */
     public function edit($user)
@@ -184,12 +156,6 @@ class UserManagementController extends Controller
         $timezones = DateTimeZone::listIdentifiers();
         $roles = Role::pluck('name')->all();
         $selectedRoles = $user->roles->pluck('name')->all();
-//        $subscription = $this->userService->userSubscription($user);
-//        $collectionMethod = $this->userService->getSubscriptionCollectionMethod($user);
-
-        /*$frequentedPlans = SubscriptionPlanPricing::whereHas('subscriptionPlan', function ($query) {
-            $query->where('status', SubscriptionPlan::ACTIVE_STATUS);
-        })->get();*/
 
         $activities = Activity::latest()->take(10)->get()->map(function ($activity) {
             return [
@@ -205,16 +171,9 @@ class UserManagementController extends Controller
             ];
         });
 
-        $referrals = $this->referralService->getUserReferrals($user);
-
         return Inertia::render('Admin/Users/Edit', [
             'user' => $user,
             'activities' => $activities,
-//            'plans' => $frequentedPlans,
-//            'collectionMethod' => $collectionMethod,
-//            'seatName' => null,
-//            'plan' => $subscription['plan'],
-//            'subscription' => $subscription['subscription'],
             'notes' => $user->userNotes()->with('poster')->get(),
             'selectedRoles' => $selectedRoles,
             'roles' => $roles,
