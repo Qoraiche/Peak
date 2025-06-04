@@ -27,9 +27,6 @@ class RolesAndPermissionsSeeder extends Seeder
                 'access-admin',
                 'edit-settings',
                 'edit-frontend-settings',
-//                'impersonate-users',
-                'access-file-manager',
-//                'send-users-magic-links',
                 'clear-cache',
                 'view-app-logs',
                 'export',
@@ -37,18 +34,9 @@ class RolesAndPermissionsSeeder extends Seeder
             'Users' => $this->crudPermissions('users'),
             'Teams' => $this->crudPermissions('teams'),
             'Roles' => $this->crudPermissions('roles'),
-            'Blog Posts' => $this->crudPermissions('blog-posts'),
-            'Blog Categories' => $this->crudPermissions('blog-categories'),
-//            'Changelogs' => $this->crudPermissions('changelogs'),
-//            'Docs' => $this->crudPermissions('docs'),
             'Users Notes' => $this->crudPermissions('users-notes'),
             'Notifications' => $this->crudPermissions('notifications'),
-//            'Pages' => $this->crudPermissions('pages'),
             'Permissions' => $this->crudPermissions('permissions'),
-//            'Referrals' => $this->crudPermissions('referrals'),
-//            'Support Tickets' => $this->crudPermissions('support-tickets'),
-//            'Roadmaps' => $this->crudPermissions('roadmaps'),
-            'Reports' => $this->crudPermissions('reports'),
         ];
 
         // Optional: merge custom config permissions
