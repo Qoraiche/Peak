@@ -15,7 +15,7 @@ defineProps({
 <template>
   <Head :title="title"/>
 
-  <div id="hero-section" class="bg-yellow-300">
+  <div id="hero-section" class="bg-gradient-to-br from-yellow-50 via-amber-100 to-orange-100">
     <AnnouncementBanner/>
 
     <Header/>
