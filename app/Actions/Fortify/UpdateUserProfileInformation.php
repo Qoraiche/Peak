@@ -21,7 +21,14 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             'name' => ['required', 'string', 'max:255'],
             'bio' => ['string', 'nullable'],
             'mobile_number' => ['nullable', 'phone:mobile'],
-            'username' => ['nullable', 'unique:users'],
+            'username' => [
+                'required',
+                'string',
+                'min:3',
+                'max:20',
+                'regex:/^[a-zA-Z0-9_]+$/',
+                Rule::unique('users')->ignore($user->id),
+            ],
             'twitter' => ['url', 'nullable'],
             'facebook' => ['url', 'nullable'],
             'instagram' => ['url', 'nullable'],
@@ -29,7 +36,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             'discord' => ['url', 'nullable'],
             'tiktok' => ['url', 'nullable'],
             'email' => ['required', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
-            'photo' => ['nullable', 'mimes:jpg,jpeg,png'], // todo: max:1024
+            'photo' => ['nullable', 'mimes:jpg,jpeg,png'],
         ])->validateWithBag('updateProfileInformation');
 
         if (isset($input['photo'])) {
@@ -43,6 +50,15 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             $user->forceFill([
                 'name' => $input['name'],
                 'email' => $input['email'],
+                'username' => $input['username'],
+                'mobile_number' => $input['mobile_number'],
+                'bio' => $input['bio'],
+                'twitter' => $input['twitter'],
+                'facebook' => $input['facebook'],
+                'instagram' => $input['instagram'],
+                'youtube' => $input['youtube'],
+                'discord' => $input['discord'],
+                'tiktok' => $input['tiktok']
             ])->save();
         }
     }
@@ -58,6 +74,15 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             'name' => $input['name'],
             'email' => $input['email'],
             'email_verified_at' => null,
+            'username' => $input['username'],
+            'mobile_number' => $input['mobile_number'],
+            'bio' => $input['bio'],
+            'twitter' => $input['twitter'],
+            'facebook' => $input['facebook'],
+            'instagram' => $input['instagram'],
+            'youtube' => $input['youtube'],
+            'discord' => $input['discord'],
+            'tiktok' => $input['tiktok']
         ])->save();
 
         $user->sendEmailVerificationNotification();
