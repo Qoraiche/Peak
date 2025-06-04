@@ -14,6 +14,7 @@ return [
         'admin' => '/admin',
         'user' => '/dashboard',
         'contact' => '/contact',
+        'about' => '/about',
     ],
 
     /*
@@ -43,7 +44,6 @@ return [
      | Define the paths for the admin and user dashboards.
      */
     'settings' => [
-
         'show_made_by_peak' => true,
     ],
 
