@@ -64,12 +64,7 @@ function resolvePageTitle(title) {
 }
 
 function resolvePageComponentByPath(name) {
-    // Resolve admin
-    // if (name.startsWith("Admin/")) {
     return resolveAdminPageComponent(name);
-    // }
-
-    // return resolveThemePageComponent(name);
 }
 
 function resolveAdminPageComponent(name) {
@@ -86,14 +81,6 @@ function resolveAdminPageComponent(name) {
 
     return null;
 }
-
-/*function resolveThemePageComponent(name) {
-    const theme = import.meta.env.VITE_APP_THEME || 'Breeze';
-    return resolvePageComponent(
-        `./Themes/${theme}/Pages/${name}.vue`,
-        import.meta.glob('./Themes/!**!/Pages/!**!/!*.vue')
-    );
-}*/
 
 function setupApp({el, App, props, plugin}) {
     const app = createApp({render: () => h(App, props)});
