@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://demo.larapeak.com/">
-    <img src="https://github.com/user-attachments/assets/2ec52f74-403a-4aee-b3aa-89bfbb9010b5" alt="Peak Logo">
+    <img style="width: 60px;" src="https://github.com/user-attachments/assets/2ec52f74-403a-4aee-b3aa-89bfbb9010b5" alt="Peak Logo">
   </a>
 </p>
 
