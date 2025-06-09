@@ -10,8 +10,9 @@ Skip the boilerplate and start building right away.
 📚 [Documentation & Installation →](https://docs.larapeak.com/installation)  
 🎯 [Live Demo →](https://demo.larapeak.com)
 
-[![Demo Site](https://github.com/user-attachments/assets/5c9956b9-e67c-4353-8ad3-7db7954fbb66)](https://demo.larapeak.com/)
+[![Demo Admin](https://github.com/user-attachments/assets/5c9956b9-e67c-4353-8ad3-7db7954fbb66)](https://demo.larapeak.com/admin)
 
+[![Demo Site](https://github.com/user-attachments/assets/728df5a7-520a-4e2c-ba6b-f7482281afe2)](https://demo.larapeak.com/)
 
 ---
 
