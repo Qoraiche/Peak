@@ -1,4 +1,4 @@
-<h1 align="center">Peak – Laravel Starter Kit & Admin Panel</h1>
+<h1 align="center">Peak – Powerful InertiaJS (Vue3) Starter Kit & Admin Panel</h1>
 
 <p align="center">
   <a href="https://demo.larapeak.com/">
@@ -28,18 +28,23 @@ Skip the boilerplate and start building right away.
 
 ## Features
 
-- **Powerful & Extendable Admin Panel**
+- **Powerful Admin Panel**
 - **Users Management**
+- **Referrals System**
 - **Permissions/Roles Management**
+- **Teams Management**
+- **Exports**
+- **Ready To use Theme/Admin Components (Tables, Widgets, Cards, Alerts)**
 - **REST API (Sanctum)**
 - **Authentication**
-- **Multi-Team Support**
-- **Multi-language Support**
+- **Teams**
+- **Translatable Admin/Theme**
 - **Multi Theme System**
-- **SaaS Theme Included**
-- **Support Ticket System**
+- **SaaS & Makreting Pages Theme Included (Breeze)**
 - **Developer-Friendly Codebase**
-- **Site Settings Center**
+- **Easily Extendable**
+- **Site Settings Center (General, Mail, Storage, Theme)**
+- **System Settings (Cache, Logs)** 
 - And more... Check peak demo [Front](https://demo.larapeak.com/admin) & [Admin](https://demo.larapeak.com/admin)
 
 ## ⚙️ Tech Stack
