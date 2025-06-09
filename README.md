@@ -1,6 +1,16 @@
-# 🌄 Peak – Laravel Starter Kit & Admin Panel
+<h1 align="center">Peak – Laravel Starter Kit & Admin Panel</h1>
 
-[![Laravel Forge Site Deployment Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fforge.laravel.com%2Fsite-badges%2F8859318b-3c71-4eb5-9102-4d0a8d34b967%3Fdate%3D1%26label%3D1%26commit%3D1&style=flat)](https://demo.larapeak.com/)
+<p align="center">
+  <a href="https://demo.larapeak.com/">
+    <img src="https://github.com/user-attachments/assets/2ec52f74-403a-4aee-b3aa-89bfbb9010b5" alt="Peak Logo">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://demo.larapeak.com/">
+    <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fforge.laravel.com%2Fsite-badges%2F8859318b-3c71-4eb5-9102-4d0a8d34b967%3Fdate%3D1%26label%3D1%26commit%3D1&style=flat" alt="Laravel Forge Site Deployment Status">
+  </a>
+</p>
 
 **Peak** is a starter kit and admin panel built on the latest Laravel stack. It gives you a beautiful, ready-to-go
 foundation for your next SaaS Laravel project — packed with useful features, a clean UI, and developer-friendly code.
@@ -15,6 +25,32 @@ Skip the boilerplate and start building right away.
 [![Demo Site](https://github.com/user-attachments/assets/728df5a7-520a-4e2c-ba6b-f7482281afe2)](https://demo.larapeak.com/)
 
 ---
+
+## Features
+
+- Advanced Admin Panel
+- SaaS Essentials: Billing, Subscriptions
+- Finance Dashboard
+- Blog CMS
+- Referral System
+- Users Management
+- Permissions/Roles Management
+- Multi Teams
+- REST API (Sanctum)
+- Authentication
+- Multi-Team Support
+- Frontend Management
+- Multi-language Support
+- Custom Landing Page
+- Custom Branding & Theme System
+- Support Ticket System
+- Developer-Friendly Codebase
+- Built-in Documentation
+- Changelog Management
+- Roadmap Management
+- Site Settings Center
+- Newsletter & Announcements System
+- And more... Check peak demo [Front](https://demo.larapeak.com/admin) & [Admin](https://demo.larapeak.com/admin)
 
 ## ⚙️ Tech Stack
 
