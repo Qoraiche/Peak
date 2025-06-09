@@ -28,19 +28,18 @@ Skip the boilerplate and start building right away.
 
 ## Features
 
-- Advanced Admin Panel
-- Users Management
-- Permissions/Roles Management
-- REST API (Sanctum)
-- Authentication
-- Multi-Team Support
-- Multi-language Support
-- SaaS Theme Included
-- Multi Theme System
-- Support Ticket System
-- Developer-Friendly Codebase
-
-- Site Settings Center
+- **Powerful & Extendable Admin Panel**
+- **Users Management**
+- **Permissions/Roles Management**
+- **REST API (Sanctum)**
+- **Authentication**
+- **Multi-Team Support**
+- **Multi-language Support**
+- **Multi Theme System**
+- **SaaS Theme Included**
+- **Support Ticket System**
+- **Developer-Friendly Codebase**
+- **Site Settings Center**
 - And more... Check peak demo [Front](https://demo.larapeak.com/admin) & [Admin](https://demo.larapeak.com/admin)
 
 ## ⚙️ Tech Stack
