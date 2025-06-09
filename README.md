@@ -29,27 +29,18 @@ Skip the boilerplate and start building right away.
 ## Features
 
 - Advanced Admin Panel
-- SaaS Essentials: Billing, Subscriptions
-- Finance Dashboard
-- Blog CMS
-- Referral System
 - Users Management
 - Permissions/Roles Management
-- Multi Teams
 - REST API (Sanctum)
 - Authentication
 - Multi-Team Support
-- Frontend Management
 - Multi-language Support
-- Custom Landing Page
-- Custom Branding & Theme System
+- SaaS Theme Included
+- Multi Theme System
 - Support Ticket System
 - Developer-Friendly Codebase
-- Built-in Documentation
-- Changelog Management
-- Roadmap Management
+
 - Site Settings Center
-- Newsletter & Announcements System
 - And more... Check peak demo [Front](https://demo.larapeak.com/admin) & [Admin](https://demo.larapeak.com/admin)
 
 ## ⚙️ Tech Stack
