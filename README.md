@@ -87,5 +87,5 @@ Thanks to the open-source community for making tools like these possible.
 
 ## 💖 Loved Peak?
 
-- Get [Peak Pro SAAS Version](https://larapeak.com/)
-- [Hire us](https://larapeak.com/register)
+- Give it a Star
+- [Hire us or get pro support](https://larapeak.com/register)
