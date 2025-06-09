@@ -17,7 +17,7 @@ foundation for your next SaaS Laravel project — packed with useful features, a
 
 Skip the boilerplate and start building right away.
 
-📚 [Documentation & Installation →](https://docs.larapeak.com/installation)  
+📚 [Documentation & Installation →](https://docs.larapeak.com/docs/getting-started/installation)  
 🎯 [Live Demo →](https://demo.larapeak.com)
 
 [![Demo Admin](https://github.com/user-attachments/assets/5c9956b9-e67c-4353-8ad3-7db7954fbb66)](https://demo.larapeak.com/admin)
