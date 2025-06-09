@@ -2,14 +2,15 @@
 
 [![Laravel Forge Site Deployment Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fforge.laravel.com%2Fsite-badges%2F8859318b-3c71-4eb5-9102-4d0a8d34b967%3Fdate%3D1%26label%3D1%26commit%3D1&style=flat)](https://demo.larapeak.com/)
 
-**Peak** is a starter kit and admin panel built on the latest Laravel stack. It gives you a beautiful, ready-to-go foundation for your next SaaS Laravel project — packed with useful features, a clean UI, and developer-friendly code.
+**Peak** is a starter kit and admin panel built on the latest Laravel stack. It gives you a beautiful, ready-to-go
+foundation for your next SaaS Laravel project — packed with useful features, a clean UI, and developer-friendly code.
 
 Skip the boilerplate and start building right away.
 
 📚 [Documentation & Installation →](https://docs.larapeak.com/installation)  
 🎯 [Live Demo →](https://demo.larapeak.com)
 
-[![Laravel Forge Site Deployment Status](https://larapeak.com/storage/hero/xkK9BM24ROGmTI7h6x9cg2X9saUKqrFiVr78erX6.png)](https://demo.larapeak.com/)
+[![Demo Site](https://github.com/user-attachments/assets/5c9956b9-e67c-4353-8ad3-7db7954fbb66)](https://demo.larapeak.com/)
 
 
 ---
@@ -22,7 +23,6 @@ Skip the boilerplate and start building right away.
 - **Vue 3**
 - **Tailwind CSS 4**
 
-
 ## 🖥 Demo
 
 You can explore Peak in action right here:  
@@ -32,7 +32,7 @@ Use demo credentials or register a test account to try out all the features.
 
 ## 📄 License
 
-Check our [license page](https://larapeak.com/license). 
+Check our [license page](https://larapeak.com/license).
 
 ## 🙌 Built With Love
 
