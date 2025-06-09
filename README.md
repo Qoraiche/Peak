@@ -1,4 +1,4 @@
-<h1 align="center">Peak – Powerful InertiaJS (Vue3) Starter Kit & Admin Panel</h1>
+<h1 align="center">Peak – InertiaJS Starter Kit & Admin Panel</h1>
 
 <p align="center">
   <a href="https://demo.larapeak.com/">
