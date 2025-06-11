@@ -38,7 +38,7 @@ const editItemRouteName = 'admin.user-management.users.edit';
 
     <template #thead>
       <SortableTableHead :sortable="true" :title="__('ID')" sort-key="id"/>
-      <SortableTableHead :sortable="true" :title="__('User')" sort-key="title"/>
+      <SortableTableHead :sortable="true" :title="__('User')" sort-key="name"/>
       <SortableTableHead :sortable="true" :title="__('Role')" sort-key="published"/>
       <SortableTableHead :sortable="true" :title="__('Created at')" sort-key="created_at"/>
     </template>
